@@ -1,1 +1,3 @@
-# cross-acc-cloudwatch-metrics-monitoring
+1) This repo includes permissions for the accounts which will be observed by monitoring account. main.tf file should be added to all production accounts. 
+2) After that allow monitoring account to view data from your source accounts. Also, in production accounts define monitoring account. These definitions can be done in Cloudwatch settings via Cloudformation easily.
+3) Finally, cross account Cloudwatch metrics can be queried in Grafana. (If your account is already connected to Grafana)
